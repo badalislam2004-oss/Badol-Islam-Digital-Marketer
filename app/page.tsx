@@ -249,7 +249,7 @@ export default function PortfolioPage() {
                   className={activePage === "home" ? "on" : ""}
                   onClick={(e) => { e.preventDefault(); navigateTo("home"); }}
                 >
-                  🏠 Home
+                  Home
                 </a>
               </li>
               <li>
