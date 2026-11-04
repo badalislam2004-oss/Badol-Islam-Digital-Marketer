@@ -514,7 +514,7 @@ export default function PortfolioPage() {
                 <small style={{ color: "var(--p)", fontWeight: 700, letterSpacing: ".12em" }}>
                   ABOUT ME
                 </small>
-                <h3>Hi, I’m Badal — a Performance Marketing &amp; Conversion Tracking Specialist.</h3>
+                <h3>Hi, I’m Badal — a Digital Marketing &amp; Conversion Tracking Specialist.</h3>
                 <p>
                   Based in Bangladesh, I help businesses make advertising more measurable with strategic
                   campaign management, accurate tracking, and data-driven optimization.
@@ -882,7 +882,7 @@ export default function PortfolioPage() {
                 />
               </div>
               <div>
-                <h3>Hi, I’m Badal — a Performance Marketing &amp; Conversion Tracking Specialist.</h3>
+                <h3>Hi, I’m Badal — a Digital Marketing &amp; Conversion Tracking Specialist.</h3>
                 <p>
                   I’m based in Bangladesh and help businesses turn their advertising budgets into measurable
                   marketing opportunities through strategic campaign management, accurate tracking, and
@@ -899,7 +899,7 @@ export default function PortfolioPage() {
                   conversion tracking, and Meta tracking solutions to support informed optimization decisions.
                 </p>
                 <p>
-                  My interests include performance marketing, paid media management, conversion tracking,
+                  My interests include digital marketing, paid media management, conversion tracking,
                   marketing analytics, and continuous campaign improvement. I’m always interested in connecting
                   with business owners, agencies, and marketing professionals looking for support with Google Ads,
                   Meta Ads, lead generation, E-commerce advertising, or conversion tracking.
@@ -907,7 +907,7 @@ export default function PortfolioPage() {
                 <div className="facts">
                   <div>
                     <b>Specialty</b>
-                    <span>Performance marketing &amp; conversion tracking</span>
+                    <span>Digital marketing &amp; conversion tracking</span>
                   </div>
                   <div>
                     <b>Campaigns</b>
