@@ -514,13 +514,14 @@ export default function PortfolioPage() {
                 <small style={{ color: "var(--p)", fontWeight: 700, letterSpacing: ".12em" }}>
                   ABOUT ME
                 </small>
-                <h3>Hi, I’m Badal. I make marketing measurable.</h3>
+                <h3>Hi, I’m Badal — a Performance Marketing &amp; Conversion Tracking Specialist.</h3>
                 <p>
-                  I’m a digital marketing expert focused on conversion tracking and Google Ads. I help businesses
-                  see which clicks become real leads, so every decision is based on data.
+                  Based in Bangladesh, I help businesses make advertising more measurable with strategic
+                  campaign management, accurate tracking, and data-driven optimization.
                 </p>
                 <p>
-                  I work remotely with international clients, communicate clearly and document every setup.
+                  I work across Google Ads and Meta Ads, using GTM, GA4, and platform conversion tracking to help
+                  businesses make informed decisions about lead generation and E-commerce campaigns.
                 </p>
                 <a
                   className="btn"
@@ -881,32 +882,44 @@ export default function PortfolioPage() {
                 />
               </div>
               <div>
-                <h3>Hi, I’m Badal. I make marketing measurable.</h3>
+                <h3>Hi, I’m Badal — a Performance Marketing &amp; Conversion Tracking Specialist.</h3>
                 <p>
-                  I’m a digital marketing expert focused on conversion tracking and Google Ads. Many businesses
-                  spend money on ads without knowing which clicks become real leads. I fix that by building
-                  reliable tracking, so every decision is based on data and not guesses.
+                  I’m based in Bangladesh and help businesses turn their advertising budgets into measurable
+                  marketing opportunities through strategic campaign management, accurate tracking, and
+                  data-driven optimization.
                 </p>
                 <p>
-                  I work remotely with clients and agencies across time zones. I communicate clearly, document
-                  my work and solve problems properly, even when a setup is tricky.
+                  Before and during campaign management, I focus on understanding business goals, identifying
+                  relevant audiences, developing a suitable campaign strategy, monitoring performance data, and
+                  finding opportunities to improve campaign efficiency.
+                </p>
+                <p>
+                  Accurate conversion tracking is essential to this process. I connect advertising platforms with
+                  reliable measurement through Google Tag Manager (GTM), Google Analytics 4 (GA4), Google Ads
+                  conversion tracking, and Meta tracking solutions to support informed optimization decisions.
+                </p>
+                <p>
+                  My interests include performance marketing, paid media management, conversion tracking,
+                  marketing analytics, and continuous campaign improvement. I’m always interested in connecting
+                  with business owners, agencies, and marketing professionals looking for support with Google Ads,
+                  Meta Ads, lead generation, E-commerce advertising, or conversion tracking.
                 </p>
                 <div className="facts">
                   <div>
                     <b>Specialty</b>
-                    <span>Conversion tracking &amp; Google Ads</span>
+                    <span>Performance marketing &amp; conversion tracking</span>
                   </div>
                   <div>
-                    <b>Working style</b>
-                    <span>Remote, clear and documented</span>
+                    <b>Campaigns</b>
+                    <span>Google Ads, Meta Ads, lead generation &amp; E-commerce</span>
                   </div>
                   <div>
-                    <b>Tools</b>
-                    <span>GTM, GA4, Google Ads, Meta</span>
+                    <b>Measurement</b>
+                    <span>GTM, GA4, Google Ads conversion tracking &amp; Meta</span>
                   </div>
                   <div>
-                    <b>Languages</b>
-                    <span>Bangla, English</span>
+                    <b>Approach</b>
+                    <span>Strategic, data-driven campaign improvement</span>
                   </div>
                 </div>
                 <a
