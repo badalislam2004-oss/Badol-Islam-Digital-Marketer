@@ -884,8 +884,7 @@ export default function PortfolioPage() {
               </div>
               <div>
                 <h3>
-                  I’m <strong>Md. Badal Islam</strong>, a{" "}
-                  <strong>Digital Marketing and Conversion Tracking Specialist.</strong>
+                  I’m <strong>Md. Badal Islam</strong>, a Digital Marketing and Conversion Tracking Specialist.
                 </h3>
                 <p>
                   I’m based in Bangladesh and help businesses get more from their advertising budgets with
