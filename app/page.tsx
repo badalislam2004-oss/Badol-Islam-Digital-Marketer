@@ -868,10 +868,6 @@ export default function PortfolioPage() {
 
         <section>
           <div className="wrap">
-            <div className="h rv">
-              <small>About Me</small>
-              <h2>The Person Behind Your Data</h2>
-            </div>
             <div className="about rv">
               <div className="aph" style={{ position: "relative", overflow: "hidden" }}>
                 <Image
