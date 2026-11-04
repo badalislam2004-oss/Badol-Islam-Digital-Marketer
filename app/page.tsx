@@ -194,12 +194,6 @@ export default function PortfolioPage() {
       {/* 2. Top Info Bar */}
       <div className="tb">
         <div className="wrap">
-          <div className="l">
-            <span>
-              <i className="dot"></i>Available for new projects
-            </span>
-            <span>🌐 Remote · Working with clients worldwide</span>
-          </div>
           <div className="r">
             <a href="https://wa.me/8801518961086" target="_blank" rel="noopener noreferrer">
               💬 +880 1518-961086

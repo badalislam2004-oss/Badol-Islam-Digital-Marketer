@@ -95,11 +95,10 @@ nav ul a{transition:.2s;padding:6px 14px;border-radius:999px}nav ul a:hover{back
 .tl .step{position:relative}.tl .step:not(:last-child):after{content:"";position:absolute;top:36px;left:calc(50% + 34px);right:calc(-50% + 34px);height:3px;background:var(--grad);opacity:.5}
 @media(max-width:700px){.tl .step:after{display:none}}
 .tb{background:linear-gradient(90deg,#047857,#16a34a 55%,#65a30d);color:#fff;font-size:13px;padding:8px 0}
-.tb .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.tb .wrap{display:flex;justify-content:flex-end;align-items:center;gap:14px;flex-wrap:wrap}
 .tb span,.tb a{display:inline-flex;gap:6px;align-items:center}.tb a{font-weight:700}.tb a:hover{text-decoration:underline}
 .tb .l,.tb .r{display:flex;gap:18px;flex-wrap:wrap}.dot{width:8px;height:8px;border-radius:50%;background:#bbf7d0;box-shadow:0 0 0 0 #bbf7d0;animation:pu 2s infinite}
 @keyframes pu{70%{box-shadow:0 0 0 8px #bbf7d000}}
-@media(max-width:640px){.tb .r{display:none}}
 .info{margin-top:-40px;position:relative;z-index:3;padding:0 0 10px}
 .ig{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
 .ib{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:18px 20px;display:flex;gap:14px;align-items:center;box-shadow:0 18px 40px #04140e33}
