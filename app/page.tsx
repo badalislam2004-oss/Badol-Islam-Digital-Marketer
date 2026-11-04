@@ -516,12 +516,13 @@ export default function PortfolioPage() {
                 </small>
                 <h3>Hi, I’m Badal — a Digital Marketing &amp; Conversion Tracking Specialist.</h3>
                 <p>
-                  Based in Bangladesh, I help businesses make advertising more measurable with strategic
-                  campaign management, accurate tracking, and data-driven optimization.
+                  I’m Md. Badal Islam, a digital marketing and conversion tracking specialist based in
+                  Bangladesh. I help businesses get more from their ad budgets through thoughtful campaign
+                  planning, reliable tracking, and regular optimization.
                 </p>
                 <p>
-                  I work across Google Ads and Meta Ads, using GTM, GA4, and platform conversion tracking to help
-                  businesses make informed decisions about lead generation and E-commerce campaigns.
+                  I work with Google Ads and Meta Ads, helping businesses measure leads and E-commerce activity
+                  with GTM, GA4, and platform conversion tracking.
                 </p>
                 <a
                   className="btn"
@@ -882,27 +883,24 @@ export default function PortfolioPage() {
                 />
               </div>
               <div>
-                <h3>Hi, I’m Badal — a Digital Marketing &amp; Conversion Tracking Specialist.</h3>
+                <h3>Hi, I’m Md. Badal Islam, a digital marketing and conversion tracking specialist.</h3>
                 <p>
-                  I’m based in Bangladesh and help businesses turn their advertising budgets into measurable
-                  marketing opportunities through strategic campaign management, accurate tracking, and
-                  data-driven optimization.
+                  I’m based in Bangladesh and help businesses get more from their advertising budgets with
+                  practical campaign planning, reliable conversion tracking, and ongoing optimization.
                 </p>
                 <p>
-                  Before and during campaign management, I focus on understanding business goals, identifying
-                  relevant audiences, developing a suitable campaign strategy, monitoring performance data, and
-                  finding opportunities to improve campaign efficiency.
+                  Every campaign starts with the business goals and the people it needs to reach. I help shape a
+                  suitable strategy, keep an eye on results, and look for practical ways to improve efficiency.
                 </p>
                 <p>
-                  Accurate conversion tracking is essential to this process. I connect advertising platforms with
-                  reliable measurement through Google Tag Manager (GTM), Google Analytics 4 (GA4), Google Ads
-                  conversion tracking, and Meta tracking solutions to support informed optimization decisions.
+                  Good decisions depend on trustworthy measurement. I use Google Tag Manager (GTM), Google
+                  Analytics 4 (GA4), Google Ads conversion tracking, and Meta tracking tools to show what’s
+                  happening across campaigns and guide the next steps.
                 </p>
                 <p>
-                  My interests include digital marketing, paid media management, conversion tracking,
-                  marketing analytics, and continuous campaign improvement. I’m always interested in connecting
-                  with business owners, agencies, and marketing professionals looking for support with Google Ads,
-                  Meta Ads, lead generation, E-commerce advertising, or conversion tracking.
+                  I’m especially interested in performance marketing, paid media, conversion tracking, and
+                  marketing analytics. I enjoy working with business owners, agencies, and marketing teams on
+                  Google Ads, Meta Ads, lead generation, and E-commerce campaigns.
                 </p>
                 <div className="facts">
                   <div>

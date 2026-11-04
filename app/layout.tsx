@@ -23,13 +23,13 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Md Badal Islam | Conversion Tracking & Google Ads Specialist",
+  title: "Md. Badal Islam | Digital Marketing & Conversion Tracking Specialist",
   description:
-    "Md Badal Islam is a digital marketing expert specializing in conversion tracking (GTM, GA4, enhanced conversions) and Google Ads for businesses and agencies worldwide.",
+    "Md. Badal Islam is a Bangladesh-based digital marketing and conversion tracking specialist helping businesses with Google Ads, Meta Ads, GTM, GA4, and campaign measurement.",
   openGraph: {
-    title: "Md Badal Islam | Digital Marketing Expert",
+    title: "Md. Badal Islam | Digital Marketing & Conversion Tracking Specialist",
     description:
-      "Md Badal Islam is a digital marketing expert specializing in conversion tracking (GTM, GA4, enhanced conversions) and Google Ads for businesses and agencies worldwide.",
+      "Based in Bangladesh, Md. Badal Islam helps businesses improve Google Ads and Meta Ads campaigns with reliable conversion tracking, GTM, and GA4.",
     siteName: "Md Badal Islam",
     type: "website",
   },
