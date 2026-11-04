@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useRef, FormEvent, useSyncExternalStore } from "react";
+import { useEffect, useState, useRef, FormEvent } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
@@ -10,17 +10,8 @@ const Hero3D = dynamic(() => import("./components/Hero3D"), { ssr: false });
 const PAGES = ["home", "about", "services", "process", "case", "faq", "contact"] as const;
 type PageId = (typeof PAGES)[number];
 
-const emptySubscribe = () => () => {};
-
 export default function PortfolioPage() {
-  const isMounted = useSyncExternalStore(
-    emptySubscribe,
-    () => true,
-    () => false
-  );
   const [activePage, setActivePage] = useState<PageId>("home");
-  const [loadingProgress, setLoadingProgress] = useState(0);
-  const [loadingDone, setLoadingDone] = useState(false);
   const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null);
 
   // Mouse tracking for Hero 3D background & card tilt
@@ -35,22 +26,6 @@ export default function PortfolioPage() {
     service: "Conversion Tracking",
     message: "",
   });
-
-  // Loading screen progression
-  useEffect(() => {
-    let current = 0;
-    const interval = setInterval(() => {
-      current += Math.ceil(Math.random() * 14);
-      if (current >= 100) {
-        current = 100;
-        clearInterval(interval);
-        setTimeout(() => setLoadingDone(true), 300);
-      }
-      setLoadingProgress(current);
-    }, 60);
-
-    return () => clearInterval(interval);
-  }, []);
 
   // Hash-based routing synchronization
   useEffect(() => {
@@ -126,72 +101,9 @@ export default function PortfolioPage() {
     window.open(`https://wa.me/8801518961086?text=${encodeURIComponent(text)}`, "_blank");
   };
 
-  if (!isMounted) {
-    return (
-      <div id="ld" suppressHydrationWarning>
-        <svg viewBox="0 0 48 48" width="84" height="84" aria-hidden="true">
-          <defs>
-            <linearGradient id="lgl" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stopColor="#059669" />
-              <stop offset="1" stopColor="#84cc16" />
-            </linearGradient>
-          </defs>
-          <path d="M24 3l18 10.5v21L24 45 6 34.5v-21z" fill="url(#lgl)" />
-          <path d="M24 3l18 10.5L24 24 6 13.5z" fill="#fff" opacity=".28" />
-          <path d="M6 13.5L24 24v21L6 34.5z" fill="#000" opacity=".12" />
-          <text
-            x="24"
-            y="33"
-            textAnchor="middle"
-            fontFamily="system-ui,sans-serif"
-            fontWeight="800"
-            fontSize="19"
-            fill="#fff"
-          >
-            B
-          </text>
-        </svg>
-        <b id="lp">0%</b>
-        <div className="lb">
-          <i id="lbar" style={{ width: "0%" }}></i>
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div suppressHydrationWarning>
-      {/* 1. Loading Screen */}
-      <div id="ld" className={loadingDone ? "off" : ""} suppressHydrationWarning>
-        <svg viewBox="0 0 48 48" width="84" height="84" aria-hidden="true">
-          <defs>
-            <linearGradient id="lgl" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stopColor="#059669" />
-              <stop offset="1" stopColor="#84cc16" />
-            </linearGradient>
-          </defs>
-          <path d="M24 3l18 10.5v21L24 45 6 34.5v-21z" fill="url(#lgl)" />
-          <path d="M24 3l18 10.5L24 24 6 13.5z" fill="#fff" opacity=".28" />
-          <path d="M6 13.5L24 24v21L6 34.5z" fill="#000" opacity=".12" />
-          <text
-            x="24"
-            y="33"
-            textAnchor="middle"
-            fontFamily="system-ui,sans-serif"
-            fontWeight="800"
-            fontSize="19"
-            fill="#fff"
-          >
-            B
-          </text>
-        </svg>
-        <b id="lp">{loadingProgress}%</b>
-        <div className="lb">
-          <i id="lbar" style={{ width: `${loadingProgress}%` }}></i>
-        </div>
-      </div>
-
-      {/* 2. Top Info Bar */}
+      {/* Top Info Bar */}
       <div className="tb">
         <div className="wrap">
           <div className="r">
@@ -205,7 +117,7 @@ export default function PortfolioPage() {
         </div>
       </div>
 
-      {/* 3. Sticky Header */}
+      {/* Sticky Header */}
       <header>
         <div className="wrap">
           <nav>
