@@ -514,7 +514,7 @@ export default function PortfolioPage() {
                 <small style={{ color: "var(--p)", fontWeight: 700, letterSpacing: ".12em" }}>
                   ABOUT ME
                 </small>
-                <h3>Hi, I’m Badal — a Digital Marketing &amp; Conversion Tracking Specialist.</h3>
+                <h3>I’m Badal — a Digital Marketing &amp; Conversion Tracking Specialist.</h3>
                 <p>
                   I’m Md. Badal Islam, a digital marketing and conversion tracking specialist based in
                   Bangladesh. I help businesses get more from their ad budgets through thoughtful campaign
@@ -883,7 +883,9 @@ export default function PortfolioPage() {
                 />
               </div>
               <div>
-                <h3>Hi, I’m Md. Badal Islam, a digital marketing and conversion tracking specialist.</h3>
+                <h3>
+                  I’m <strong>Md. Badal Islam</strong>, a digital marketing and conversion tracking specialist.
+                </h3>
                 <p>
                   I’m based in Bangladesh and help businesses get more from their advertising budgets with
                   practical campaign planning, reliable conversion tracking, and ongoing optimization.
