@@ -648,9 +648,8 @@ export default function PortfolioPage() {
                 onClick={(e) => { e.preventDefault(); navigateTo("services"); }}
                 style={{ "--k": "#059669" } as React.CSSProperties}
               >
-                <div className="ic brand-logos tracking-logos">
-                  <Image src="/tracking-icon.png" alt="" width={20} height={20} />
-                  <BrandIcon icon={siGoogleanalytics} size={20} />
+                <div className="ic brand-logos">
+                  <Image src="/tracking-icon.png" alt="" width={28} height={28} />
                 </div>
                 <h3>Conversion Tracking</h3>
                 <p>GTM, GA4, enhanced conversions and more.</p>
@@ -1132,9 +1131,8 @@ export default function PortfolioPage() {
             </div>
             <div className="grid">
               <div className="card rv" style={{ "--k": "var(--p)" } as React.CSSProperties}>
-                <div className="ic brand-logos tracking-logos">
-                  <Image src="/tracking-icon.png" alt="" width={20} height={20} />
-                  <BrandIcon icon={siGoogleanalytics} size={20} />
+                <div className="ic brand-logos">
+                  <Image src="/tracking-icon.png" alt="" width={28} height={28} />
                 </div>
                 <h3>Conversion Tracking</h3>
                 <p>Client-side and server-side setups that you can trust.</p>

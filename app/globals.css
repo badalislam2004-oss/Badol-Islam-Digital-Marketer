@@ -34,7 +34,6 @@ section{padding:80px 0}.alt{background:var(--surface);border-block:1px solid var
 .card:before{content:"";position:absolute;inset:0 0 auto;height:4px;background:var(--k,var(--p))}
 .ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:24px;margin-bottom:14px;background:var(--k,var(--p));color:#fff}
 .ic.brand-logos{display:flex;align-items:center;justify-content:center;gap:4px;background:var(--surface);border:1px solid var(--line)}
-.ic.tracking-logos{width:60px;height:60px;border-radius:17px}
 .tools span{display:flex;align-items:center;gap:8px}
 .card h3{margin:0 0 6px;font-size:18px}.card p{color:var(--muted);margin:0 0 6px;font-size:15px}.card ul{padding-left:18px;color:var(--muted);margin:8px 0 0;font-size:15px}
 .about{display:grid;grid-template-columns:1fr 1.3fr;gap:44px;align-items:start}@media(max-width:820px){.about{grid-template-columns:1fr}}
