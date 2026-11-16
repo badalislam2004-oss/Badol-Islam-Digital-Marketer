@@ -1117,7 +1117,7 @@ export default function PortfolioPage() {
           <i className="sh s3"></i>
           <div className="wrap">
             <small>Home / Services</small>
-            <h1>🛠️ My Services</h1>
+            <h1>My Services</h1>
             <p>How I can help your business grow.</p>
           </div>
         </div>
