@@ -649,7 +649,7 @@ export default function PortfolioPage() {
                 style={{ "--k": "#059669" } as React.CSSProperties}
               >
                 <div className="ic brand-logos">
-                  <Image src="/tracking-icon.png" alt="" width={28} height={28} />
+                  <Image src="/tracking-icon.png" alt="" width={44} height={44} />
                 </div>
                 <h3>Conversion Tracking</h3>
                 <p>GTM, GA4, enhanced conversions and more.</p>
@@ -1132,7 +1132,7 @@ export default function PortfolioPage() {
             <div className="grid">
               <div className="card rv" style={{ "--k": "var(--p)" } as React.CSSProperties}>
                 <div className="ic brand-logos">
-                  <Image src="/tracking-icon.png" alt="" width={28} height={28} />
+                  <Image src="/tracking-icon.png" alt="" width={44} height={44} />
                 </div>
                 <h3>Conversion Tracking</h3>
                 <p>Client-side and server-side setups that you can trust.</p>
