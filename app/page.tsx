@@ -166,7 +166,7 @@ export default function PortfolioPage() {
               <PhoneIcon />
               +880 1518-961086
             </a>
-            <a href="https://www.linkedin.com/in/mdbadalislams/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/mdbadalislam/" target="_blank" rel="noopener noreferrer">
               <LinkedInIcon />
               LinkedIn
             </a>
@@ -469,7 +469,7 @@ export default function PortfolioPage() {
                 </a>
                 <a
                   className="btn"
-                  href="https://www.linkedin.com/in/mdbadalislams/"
+                  href="https://www.linkedin.com/in/mdbadalislam/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -495,7 +495,7 @@ export default function PortfolioPage() {
                 </div>
                 <div>
                   <b>How to reach me</b>
-                  <span>WhatsApp +880 1518-961086 or LinkedIn (mdbadalislams)</span>
+                  <span>WhatsApp +880 1518-961086 or LinkedIn (mdbadalislam)</span>
                 </div>
               </div>
             </div>
@@ -977,7 +977,7 @@ export default function PortfolioPage() {
                 </div>
                 <a
                   className="btn o"
-                  href="https://www.linkedin.com/in/mdbadalislams/"
+                  href="https://www.linkedin.com/in/mdbadalislam/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -1817,9 +1817,9 @@ export default function PortfolioPage() {
                     <WhatsAppIcon size={22} />
                     <span>WhatsApp: +880 1518-961086</span>
                   </a>
-                  <a className="social-contact" href="https://www.linkedin.com/in/mdbadalislams/" target="_blank" rel="noopener noreferrer">
+                  <a className="social-contact" href="https://www.linkedin.com/in/mdbadalislam/" target="_blank" rel="noopener noreferrer">
                     <LinkedInIcon />
-                    <span>LinkedIn: mdbadalislams</span>
+                    <span>LinkedIn: mdbadalislam</span>
                   </a>
                 </div>
               </div>
