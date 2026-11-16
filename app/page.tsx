@@ -8,7 +8,6 @@ import {
   siApple,
   siFacebook,
   siGoogleanalytics,
-  siGoogletagmanager,
   siLooker,
   siTiktok,
 } from "simple-icons";
@@ -650,7 +649,7 @@ export default function PortfolioPage() {
                 style={{ "--k": "#059669" } as React.CSSProperties}
               >
                 <div className="ic brand-logos">
-                  <BrandIcon icon={siGoogletagmanager} size={20} />
+                  <Image src="/tracking-icon.png" alt="" width={28} height={28} />
                   <BrandIcon icon={siGoogleanalytics} size={20} />
                 </div>
                 <h3>Conversion Tracking</h3>
@@ -1134,7 +1133,7 @@ export default function PortfolioPage() {
             <div className="grid">
               <div className="card rv" style={{ "--k": "var(--p)" } as React.CSSProperties}>
                 <div className="ic brand-logos">
-                  <BrandIcon icon={siGoogletagmanager} size={20} />
+                  <Image src="/tracking-icon.png" alt="" width={28} height={28} />
                   <BrandIcon icon={siGoogleanalytics} size={20} />
                 </div>
                 <h3>Conversion Tracking</h3>
@@ -1195,7 +1194,7 @@ export default function PortfolioPage() {
               </div>
               <div className="card rv" style={{ "--k": "var(--warn)" } as React.CSSProperties}>
                 <div className="ic brand-logos">
-                  <BrandIcon icon={siGoogleanalytics} />
+                  <Image src="/tracking-icon.png" alt="" width={28} height={28} />
                 </div>
                 <h3>Tracking Audit</h3>
                 <p>I find what’s broken or missing in your current setup.</p>
@@ -1215,7 +1214,7 @@ export default function PortfolioPage() {
               <h2>Platforms I Work With</h2>
             </div>
             <div className="tools rv">
-              <span><BrandIcon icon={siGoogletagmanager} size={20} />Google Tag Manager</span>
+              <span><Image src="/tracking-icon.png" alt="" width={20} height={20} />Google Tag Manager</span>
               <span><BrandIcon icon={siGoogleanalytics} size={20} />Google Analytics 4</span>
               <span><Image src="/google-ads-icon.png" alt="" width={20} height={20} />Google Ads</span>
               <span><BrandIcon icon={siFacebook} size={20} />Meta Ads</span>
