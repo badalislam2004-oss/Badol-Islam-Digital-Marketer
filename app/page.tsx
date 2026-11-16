@@ -663,8 +663,8 @@ export default function PortfolioPage() {
                 onClick={(e) => { e.preventDefault(); navigateTo("services"); }}
                 style={{ "--k": "#14b8a6" } as React.CSSProperties}
               >
-                <div className="google-ads-service-logo">
-                  <Image src="/google-ads-logo.png" alt="Google Ads" width={96} height={96} />
+                <div className="ic brand-logos">
+                  <Image src="/google-ads-icon.png" alt="" width={28} height={28} />
                 </div>
                 <h3>Google Ads</h3>
                 <p>Campaigns built for lead quality and ROI.</p>
@@ -1146,8 +1146,8 @@ export default function PortfolioPage() {
                 </ul>
               </div>
               <div className="card rv" style={{ "--k": "var(--pk)" } as React.CSSProperties}>
-                <div className="google-ads-service-logo">
-                  <Image src="/google-ads-logo.png" alt="Google Ads" width={96} height={96} />
+                <div className="ic brand-logos">
+                  <Image src="/google-ads-icon.png" alt="" width={28} height={28} />
                 </div>
                 <h3>Google Ads Management</h3>
                 <p>Campaigns built around lead quality and return on spend.</p>
@@ -1217,9 +1217,7 @@ export default function PortfolioPage() {
             <div className="tools rv">
               <span><BrandIcon icon={siGoogletagmanager} size={20} />Google Tag Manager</span>
               <span><BrandIcon icon={siGoogleanalytics} size={20} />Google Analytics 4</span>
-              <span className="google-ads-tool">
-                <Image src="/google-ads-logo.png" alt="Google Ads" width={84} height={84} />
-              </span>
+              <span><Image src="/google-ads-icon.png" alt="" width={20} height={20} />Google Ads</span>
               <span><BrandIcon icon={siFacebook} size={20} />Meta Ads</span>
               <span><BrandIcon icon={siTiktok} size={20} />TikTok Ads</span>
               <span><MicrosoftIcon size={20} />Microsoft Clarity</span>
