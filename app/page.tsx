@@ -1111,16 +1111,10 @@ export default function PortfolioPage() {
       {/* 6. PAGE: SERVICES                                         */}
       {/* ========================================================= */}
       <div className={`page ${activePage === "services" ? "on" : ""}`} data-p="services">
-        <div className="service-banner">
-          <Image
-            src="/service-banner.png"
-            alt="Md. Badal Islam, digital marketing expert specializing in Google Ads, Meta Ads, TikTok Ads, lead generation and conversion tracking"
-            fill
-            sizes="100vw"
-            priority={activePage === "services"}
-          />
-        </div>
-        <div className="ph" style={{ "--a": "#0d9488", "--b": "#06b6d4" } as React.CSSProperties}>
+        <div className="ph service-ph" style={{ "--a": "#0d9488", "--b": "#06b6d4" } as React.CSSProperties}>
+          <div className="service-watermark" aria-hidden="true">
+            <Image src="/service-watermark.png" alt="" fill sizes="50vw" />
+          </div>
           <i className="sh s1"></i>
           <i className="sh s2"></i>
           <i className="sh s3"></i>
