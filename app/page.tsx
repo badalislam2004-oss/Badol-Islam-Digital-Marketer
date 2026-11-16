@@ -483,11 +483,11 @@ export default function PortfolioPage() {
                 </div>
                 <div>
                   <b>Services</b>
-                  <span>Conversion tracking, Google Ads management, app install tracking, tracking audits</span>
+                  <span>Conversion tracking, Google Ads, Meta Ads, TikTok Ads, app install tracking, tracking audits</span>
                 </div>
                 <div>
                   <b>Tools</b>
-                  <span>Google Tag Manager, GA4, Google Ads, Meta Ads, Microsoft Clarity, Looker Studio</span>
+                  <span>Google Tag Manager, GA4, Google Ads, Meta Ads, TikTok Ads, Microsoft Clarity, Looker Studio</span>
                 </div>
                 <div>
                   <b>Best for</b>
@@ -621,6 +621,28 @@ export default function PortfolioPage() {
                 <div className="ic">📣</div>
                 <h3>Google Ads</h3>
                 <p>Campaigns built for lead quality and ROI.</p>
+                <span className="lk">Learn more &rarr;</span>
+              </a>
+              <a
+                className="card rv"
+                href="#services"
+                onClick={(e) => { e.preventDefault(); navigateTo("services"); }}
+                style={{ "--k": "#1877f2" } as React.CSSProperties}
+              >
+                <div className="ic">📣</div>
+                <h3>Meta Ads</h3>
+                <p>Facebook and Instagram campaigns focused on reaching the right audience.</p>
+                <span className="lk">Learn more &rarr;</span>
+              </a>
+              <a
+                className="card rv"
+                href="#services"
+                onClick={(e) => { e.preventDefault(); navigateTo("services"); }}
+                style={{ "--k": "#111827" } as React.CSSProperties}
+              >
+                <div className="ic">🎵</div>
+                <h3>TikTok Ads</h3>
+                <p>Campaign setup and optimization to help your business reach TikTok audiences.</p>
                 <span className="lk">Learn more &rarr;</span>
               </a>
               <a
@@ -1074,6 +1096,26 @@ export default function PortfolioPage() {
                   <li>Performance reporting</li>
                 </ul>
               </div>
+              <div className="card rv" style={{ "--k": "#1877f2" } as React.CSSProperties}>
+                <div className="ic">📣</div>
+                <h3>Meta Ads Management</h3>
+                <p>Facebook and Instagram campaigns planned around your business goals.</p>
+                <ul>
+                  <li>Campaign and audience setup</li>
+                  <li>Pixel and conversion event tracking</li>
+                  <li>Optimization and performance reporting</li>
+                </ul>
+              </div>
+              <div className="card rv" style={{ "--k": "#111827" } as React.CSSProperties}>
+                <div className="ic">🎵</div>
+                <h3>TikTok Ads Management</h3>
+                <p>TikTok campaigns designed to connect with relevant audiences.</p>
+                <ul>
+                  <li>Campaign and targeting setup</li>
+                  <li>TikTok Pixel and event tracking</li>
+                  <li>Optimization and performance reporting</li>
+                </ul>
+              </div>
               <div className="card rv" style={{ "--k": "var(--p2)" } as React.CSSProperties}>
                 <div className="ic">📱</div>
                 <h3>App Install Tracking</h3>
@@ -1107,6 +1149,7 @@ export default function PortfolioPage() {
               <span>Google Analytics 4</span>
               <span>Google Ads</span>
               <span>Meta Ads</span>
+              <span>TikTok Ads</span>
               <span>Microsoft Clarity</span>
               <span>Looker Studio</span>
             </div>
@@ -1845,6 +1888,8 @@ export default function PortfolioPage() {
                 >
                   <option value="Conversion Tracking">Conversion Tracking</option>
                   <option value="Google Ads Management">Google Ads Management</option>
+                  <option value="Meta Ads Management">Meta Ads Management</option>
+                  <option value="TikTok Ads Management">TikTok Ads Management</option>
                   <option value="App Install Tracking">App Install Tracking</option>
                   <option value="Tracking Audit">Tracking Audit</option>
                   <option value="Full Tracking & Ads Setup">Full Tracking &amp; Ads Setup</option>
