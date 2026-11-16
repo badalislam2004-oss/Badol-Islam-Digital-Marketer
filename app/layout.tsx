@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Md. Badal Islam | Digital Marketing & Conversion Tracking Specialist",
     description:
       "Based in Bangladesh, Md. Badal Islam helps businesses improve Google Ads and Meta Ads campaigns with reliable conversion tracking, GTM, and GA4.",
-    siteName: "Md Badal Islam",
+    siteName: "Md. Badal Islam",
     type: "website",
   },
   icons: {

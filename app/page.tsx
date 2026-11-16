@@ -10,6 +10,61 @@ const Hero3D = dynamic(() => import("./components/Hero3D"), { ssr: false });
 const PAGES = ["home", "about", "services", "process", "case", "faq", "contact"] as const;
 type PageId = (typeof PAGES)[number];
 
+function WhatsAppIcon({ size = 24 }: { size?: number }) {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      width={size}
+      height={size}
+      viewBox="0 0 32 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill="#25D366"
+        d="M16 2.5C8.55 2.5 2.5 8.55 2.5 16c0 2.38.62 4.62 1.72 6.57L2.5 29.5l7.1-1.86A13.43 13.43 0 0 0 16 29.5c7.45 0 13.5-6.05 13.5-13.5S23.45 2.5 16 2.5Z"
+      />
+      <path
+        fill="#fff"
+        d="M22.2 19.04c-.27-.14-1.6-.79-1.85-.88-.25-.09-.43-.14-.61.14-.18.27-.7.88-.85 1.06-.16.18-.32.2-.59.07-.27-.14-1.15-.42-2.19-1.36-.81-.72-1.36-1.61-1.52-1.88-.16-.27-.02-.43.12-.57.13-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.02-.22-.53-.44-.46-.61-.47h-.52c-.18 0-.47.07-.72.34-.25.27-.95.93-.95 2.27s.98 2.63 1.11 2.81c.14.18 1.93 2.94 4.66 4.11.65.28 1.16.45 1.55.58.65.2 1.24.17 1.71.1.52-.08 1.6-.66 1.83-1.3.23-.63.23-1.18.16-1.3-.07-.11-.25-.18-.52-.31Z"
+      />
+    </svg>
+  );
+}
+
+function PhoneIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.56 3.57.56a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.61 21 3 13.39 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.19 2.45.56 3.57a1 1 0 0 1-.25 1.02l-2.19 2.2Z" />
+    </svg>
+  );
+}
+
+function LinkedInIcon({ size = 16 }: { size?: number }) {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.78C.8 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.78 24h20.44c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" />
+    </svg>
+  );
+}
+
 export default function PortfolioPage() {
   const [activePage, setActivePage] = useState<PageId>("home");
   const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null);
@@ -97,7 +152,7 @@ export default function PortfolioPage() {
 
   const handleContactSubmit = (e: FormEvent) => {
     e.preventDefault();
-    const text = `Hello Badal, I am ${formData.name}. Website: ${formData.website || "N/A"}. Service: ${formData.service}. ${formData.message}`;
+    const text = `Hello Md. Badal Islam, I am ${formData.name}. Website: ${formData.website || "N/A"}. Service: ${formData.service}. ${formData.message}`;
     window.open(`https://wa.me/8801518961086?text=${encodeURIComponent(text)}`, "_blank");
   };
 
@@ -107,11 +162,13 @@ export default function PortfolioPage() {
       <div className="tb">
         <div className="wrap">
           <div className="r">
-            <a href="https://wa.me/8801518961086" target="_blank" rel="noopener noreferrer">
-              💬 +880 1518-961086
+            <a href="tel:+8801518961086">
+              <PhoneIcon />
+              +880 1518-961086
             </a>
             <a href="https://www.linkedin.com/in/mdbadalislams/" target="_blank" rel="noopener noreferrer">
-              🔗 LinkedIn
+              <LinkedInIcon />
+              LinkedIn
             </a>
           </div>
         </div>
@@ -145,7 +202,7 @@ export default function PortfolioPage() {
                 </text>
               </svg>
               <span>
-                Badal<span className="gt">.</span>
+                Md. Badal Islam
               </span>
             </a>
             <ul>
@@ -244,7 +301,7 @@ export default function PortfolioPage() {
                 Accurate Data. <span className="gt">Smarter Ads.</span> Better Growth.
               </h1>
               <p>
-                I’m Md Badal Islam, a digital marketing expert who helps businesses and agencies track
+                I’m Md. Badal Islam, a digital marketing expert who helps businesses and agencies track
                 what really works and spend their ad budget with confidence.
               </p>
               <div className="btns">
@@ -286,7 +343,7 @@ export default function PortfolioPage() {
                 <div className="face">
                   <Image
                     src="/profile.jpeg"
-                    alt="Md Badal Islam"
+                    alt="Md. Badal Islam"
                     fill
                     sizes="(max-width: 860px) 290px, 330px"
                     loading="eager"
@@ -395,13 +452,13 @@ export default function PortfolioPage() {
                 <div className="av2">
                   <Image
                     src="/profile.jpeg"
-                    alt="Md Badal Islam"
+                    alt="Md. Badal Islam"
                     width={96}
                     height={96}
                     style={{ borderRadius: "50%", objectFit: "cover" }}
                   />
                 </div>
-                <h3>Md Badal Islam</h3>
+                <h3>Md. Badal Islam</h3>
                 <p>Digital Marketing Expert</p>
                 <a
                   className="btn"
@@ -504,7 +561,7 @@ export default function PortfolioPage() {
               <div className="aph" style={{ position: "relative", overflow: "hidden" }}>
                 <Image
                   src="/profile.jpeg"
-                  alt="Md Badal Islam Portrait"
+                  alt="Md. Badal Islam Portrait"
                   fill
                   sizes="(max-width: 820px) 100vw, 400px"
                   style={{ objectFit: "cover" }}
@@ -514,7 +571,7 @@ export default function PortfolioPage() {
                 <small style={{ color: "var(--p)", fontWeight: 700, letterSpacing: ".12em" }}>
                   ABOUT ME
                 </small>
-                <h3>I’m Badal — a Digital Marketing &amp; Conversion Tracking Specialist.</h3>
+                <h3>I’m Md. Badal Islam — a Digital Marketing &amp; Conversion Tracking Specialist.</h3>
                 <p>
                   I’m Md. Badal Islam, a digital marketing and conversion tracking specialist based in
                   Bangladesh. I help businesses get more from their ad budgets through thoughtful campaign
@@ -707,7 +764,7 @@ export default function PortfolioPage() {
             </div>
             <div className="grid">
               <div className="card vc rv" style={{ "--k": "#059669" } as React.CSSProperties}>
-                <p>&ldquo;Badal fixed our tracking in 2 days when our previous agency couldn&apos;t figure it out. Now Google Ads finally optimizes on actual closed leads.&rdquo;</p>
+                <p>&ldquo;Md. Badal Islam fixed our tracking in 2 days when our previous agency couldn&apos;t figure it out. Now Google Ads finally optimizes on actual closed leads.&rdquo;</p>
                 <b>Sarah Jenkins</b>
                 <br />
                 <small>Head of Growth, SaaS Studio</small>
@@ -872,7 +929,7 @@ export default function PortfolioPage() {
               <div className="aph" style={{ position: "relative", overflow: "hidden" }}>
                 <Image
                   src="/profile.jpeg"
-                  alt="Md Badal Islam Portrait"
+                  alt="Md. Badal Islam Portrait"
                   fill
                   sizes="(max-width: 820px) 100vw, 400px"
                   style={{ objectFit: "cover" }}
@@ -1756,11 +1813,13 @@ export default function PortfolioPage() {
                   <li>Remote, across time zones</li>
                 </ul>
                 <div className="cl">
-                  <a href="https://wa.me/8801518961086" target="_blank" rel="noopener noreferrer">
-                    💬 WhatsApp: +880 1518-961086
+                  <a className="wa-contact" href="https://wa.me/8801518961086" target="_blank" rel="noopener noreferrer">
+                    <WhatsAppIcon size={22} />
+                    <span>WhatsApp: +880 1518-961086</span>
                   </a>
-                  <a href="https://www.linkedin.com/in/mdbadalislams/" target="_blank" rel="noopener noreferrer">
-                    🔗 LinkedIn: mdbadalislams
+                  <a className="social-contact" href="https://www.linkedin.com/in/mdbadalislams/" target="_blank" rel="noopener noreferrer">
+                    <LinkedInIcon />
+                    <span>LinkedIn: mdbadalislams</span>
                   </a>
                 </div>
               </div>
@@ -1809,7 +1868,7 @@ export default function PortfolioPage() {
       {/* Footer */}
       <footer>
         <div className="wrap">
-          © 2026 Md Badal Islam · Digital Marketing Expert · Working with clients worldwide
+          © 2026 Md. Badal Islam · Digital Marketing Expert · Working with clients worldwide
         </div>
       </footer>
 
@@ -1821,7 +1880,7 @@ export default function PortfolioPage() {
         rel="noopener noreferrer"
         aria-label="Contact on WhatsApp"
       >
-        💬
+        <WhatsAppIcon size={34} />
       </a>
 
       {/* Lightbox Overlay */}
