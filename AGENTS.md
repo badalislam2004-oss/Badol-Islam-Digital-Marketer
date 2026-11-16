@@ -28,3 +28,7 @@ Retain qualifying friction even if it is later fixed or worked around; record th
 Before the final response, run one reporting pass. If candidates remain, from this file's directory run `npx --no-install next internal agent-feedback-instructions` once without piping or truncating its output. Follow its output or error guidance. If a network sandbox blocks it, retry with network access; if it still returns no output, continue normally.
 
 <!-- END:nextjs-agent-feedback -->
+
+## GitHub publishing
+
+After completing and validating requested project changes, commit the relevant changes and push them to `origin` on the current branch. Do not push if validation fails; report the failure instead. Never force-push or include unrelated user changes in a commit.
