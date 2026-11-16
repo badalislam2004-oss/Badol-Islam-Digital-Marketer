@@ -3,12 +3,55 @@
 import { useEffect, useState, useRef, FormEvent } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import {
+  siAndroid,
+  siApple,
+  siFacebook,
+  siGoogleads,
+  siGoogleanalytics,
+  siGoogletagmanager,
+  siLooker,
+  siTiktok,
+} from "simple-icons";
+import type { SimpleIcon } from "simple-icons";
 
 // Dynamically import Hero3D with SSR disabled
 const Hero3D = dynamic(() => import("./components/Hero3D"), { ssr: false });
 
 const PAGES = ["home", "about", "services", "process", "case", "faq", "contact"] as const;
 type PageId = (typeof PAGES)[number];
+
+function BrandIcon({ icon, size = 24 }: { icon: SimpleIcon; size?: number }) {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill={`#${icon.hex}`}
+    >
+      <path d={icon.path} />
+    </svg>
+  );
+}
+
+function MicrosoftIcon({ size = 24 }: { size?: number }) {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+    >
+      <path fill="#f25022" d="M1 1h10v10H1z" />
+      <path fill="#7fba00" d="M13 1h10v10H13z" />
+      <path fill="#00a4ef" d="M1 13h10v10H1z" />
+      <path fill="#ffb900" d="M13 13h10v10H13z" />
+    </svg>
+  );
+}
 
 function WhatsAppIcon({ size = 24 }: { size?: number }) {
   return (
@@ -607,7 +650,10 @@ export default function PortfolioPage() {
                 onClick={(e) => { e.preventDefault(); navigateTo("services"); }}
                 style={{ "--k": "#059669" } as React.CSSProperties}
               >
-                <div className="ic">📡</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siGoogletagmanager} size={20} />
+                  <BrandIcon icon={siGoogleanalytics} size={20} />
+                </div>
                 <h3>Conversion Tracking</h3>
                 <p>GTM, GA4, enhanced conversions and more.</p>
                 <span className="lk">Learn more &rarr;</span>
@@ -618,7 +664,9 @@ export default function PortfolioPage() {
                 onClick={(e) => { e.preventDefault(); navigateTo("services"); }}
                 style={{ "--k": "#14b8a6" } as React.CSSProperties}
               >
-                <div className="ic">📣</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siGoogleads} />
+                </div>
                 <h3>Google Ads</h3>
                 <p>Campaigns built for lead quality and ROI.</p>
                 <span className="lk">Learn more &rarr;</span>
@@ -629,7 +677,9 @@ export default function PortfolioPage() {
                 onClick={(e) => { e.preventDefault(); navigateTo("services"); }}
                 style={{ "--k": "#1877f2" } as React.CSSProperties}
               >
-                <div className="ic">📣</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siFacebook} />
+                </div>
                 <h3>Meta Ads</h3>
                 <p>Facebook and Instagram campaigns focused on reaching the right audience.</p>
                 <span className="lk">Learn more &rarr;</span>
@@ -640,7 +690,9 @@ export default function PortfolioPage() {
                 onClick={(e) => { e.preventDefault(); navigateTo("services"); }}
                 style={{ "--k": "#111827" } as React.CSSProperties}
               >
-                <div className="ic">🎵</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siTiktok} />
+                </div>
                 <h3>TikTok Ads</h3>
                 <p>Campaign setup and optimization to help your business reach TikTok audiences.</p>
                 <span className="lk">Learn more &rarr;</span>
@@ -651,7 +703,10 @@ export default function PortfolioPage() {
                 onClick={(e) => { e.preventDefault(); navigateTo("services"); }}
                 style={{ "--k": "#84cc16" } as React.CSSProperties}
               >
-                <div className="ic">📱</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siApple} size={20} />
+                  <BrandIcon icon={siAndroid} size={20} />
+                </div>
                 <h3>App Install Tracking</h3>
                 <p>iOS and Android install measurement.</p>
                 <span className="lk">Learn more &rarr;</span>
@@ -662,7 +717,9 @@ export default function PortfolioPage() {
                 onClick={(e) => { e.preventDefault(); navigateTo("services"); }}
                 style={{ "--k": "#65a30d" } as React.CSSProperties}
               >
-                <div className="ic">🔍</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siGoogleanalytics} />
+                </div>
                 <h3>Tracking Audit</h3>
                 <p>Find what is broken or missing.</p>
                 <span className="lk">Learn more &rarr;</span>
@@ -1077,7 +1134,10 @@ export default function PortfolioPage() {
             </div>
             <div className="grid">
               <div className="card rv" style={{ "--k": "var(--p)" } as React.CSSProperties}>
-                <div className="ic">📡</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siGoogletagmanager} size={20} />
+                  <BrandIcon icon={siGoogleanalytics} size={20} />
+                </div>
                 <h3>Conversion Tracking</h3>
                 <p>Client-side and server-side setups that you can trust.</p>
                 <ul>
@@ -1087,7 +1147,9 @@ export default function PortfolioPage() {
                 </ul>
               </div>
               <div className="card rv" style={{ "--k": "var(--pk)" } as React.CSSProperties}>
-                <div className="ic">📣</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siGoogleads} />
+                </div>
                 <h3>Google Ads Management</h3>
                 <p>Campaigns built around lead quality and return on spend.</p>
                 <ul>
@@ -1097,7 +1159,9 @@ export default function PortfolioPage() {
                 </ul>
               </div>
               <div className="card rv" style={{ "--k": "#1877f2" } as React.CSSProperties}>
-                <div className="ic">📣</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siFacebook} />
+                </div>
                 <h3>Meta Ads Management</h3>
                 <p>Facebook and Instagram campaigns planned around your business goals.</p>
                 <ul>
@@ -1107,7 +1171,9 @@ export default function PortfolioPage() {
                 </ul>
               </div>
               <div className="card rv" style={{ "--k": "#111827" } as React.CSSProperties}>
-                <div className="ic">🎵</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siTiktok} />
+                </div>
                 <h3>TikTok Ads Management</h3>
                 <p>TikTok campaigns designed to connect with relevant audiences.</p>
                 <ul>
@@ -1117,7 +1183,10 @@ export default function PortfolioPage() {
                 </ul>
               </div>
               <div className="card rv" style={{ "--k": "var(--p2)" } as React.CSSProperties}>
-                <div className="ic">📱</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siApple} size={20} />
+                  <BrandIcon icon={siAndroid} size={20} />
+                </div>
                 <h3>App Install Tracking</h3>
                 <p>Measure installs and in-app actions for iOS and Android.</p>
                 <ul>
@@ -1126,7 +1195,9 @@ export default function PortfolioPage() {
                 </ul>
               </div>
               <div className="card rv" style={{ "--k": "var(--warn)" } as React.CSSProperties}>
-                <div className="ic">🔍</div>
+                <div className="ic brand-logos">
+                  <BrandIcon icon={siGoogleanalytics} />
+                </div>
                 <h3>Tracking Audit</h3>
                 <p>I find what’s broken or missing in your current setup.</p>
                 <ul>
@@ -1145,13 +1216,13 @@ export default function PortfolioPage() {
               <h2>Platforms I Work With</h2>
             </div>
             <div className="tools rv">
-              <span>Google Tag Manager</span>
-              <span>Google Analytics 4</span>
-              <span>Google Ads</span>
-              <span>Meta Ads</span>
-              <span>TikTok Ads</span>
-              <span>Microsoft Clarity</span>
-              <span>Looker Studio</span>
+              <span><BrandIcon icon={siGoogletagmanager} size={20} />Google Tag Manager</span>
+              <span><BrandIcon icon={siGoogleanalytics} size={20} />Google Analytics 4</span>
+              <span><BrandIcon icon={siGoogleads} size={20} />Google Ads</span>
+              <span><BrandIcon icon={siFacebook} size={20} />Meta Ads</span>
+              <span><BrandIcon icon={siTiktok} size={20} />TikTok Ads</span>
+              <span><MicrosoftIcon size={20} />Microsoft Clarity</span>
+              <span><BrandIcon icon={siLooker} size={20} />Looker Studio</span>
             </div>
           </div>
         </section>
